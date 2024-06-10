@@ -5,19 +5,21 @@
     <title>My test page</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body onload="displayAll();">
-    <div class="wrapper">
-      <div class="fist">
-        <canvas id="first-canvas" width="600" height="600"></canvas>
-      </div>
-      <div class="btnWrapper">
-        <button class="button">Change color</button>
-        <div><p class="rgb">Current color : RGB (83,255,69)</p></div>
+  <body onload="Triangle();">
+    <div class="wrap">
+      <div class="first">
+        <canvas id="main-canvas" width="1000" height="800"></canvas>
       </div>
       <div class="second">
-        <canvas id="second-canvas" width="600" height="600"></canvas>
+        <p><strong>Arrow Up:</strong> Move up</p>
+        <p><strong>Arrow Down:</strong> Move down</p>
+        <p><strong>Arrow Left:</strong> Move left</p>
+        <p><strong>Arrow Right:</strong> Move right</p>
+        <p><strong>W:</strong> Move backward</p>
+        <p><strong>S:</strong> Move forward</p>
       </div>
     </div>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/gl-matrix@3/gl-matrix.js"></script>
   <script src="script.js"></script>
 </html>
